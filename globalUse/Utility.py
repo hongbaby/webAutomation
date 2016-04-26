@@ -1,0 +1,3 @@
+USERNAME = 'xx'
+PASSWORD = '1'
+ROOT_URL = "xxx"
