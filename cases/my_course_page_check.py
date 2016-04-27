@@ -4,6 +4,7 @@ from globalUse.page_base import PageBase
 from businessCommon.pages.my_course_page import MyCoursePage
 from common.common_function import action_chains_move_to_element, wait_for_element_visible, get_element1
 
+
 class MyCoursePageCheck(PageBase):
 
     def test_current_course_name_check(self):

@@ -1,4 +1,5 @@
-USERNAME = 'xxx'
+USERNAME = 'khongc15'
 PASSWORD = '1'
-ROOT_URL = "xxx"
+HOSTNAME = "ec.ef.com.cn"
+ROOT_URL = "http://" + HOSTNAME + "/partner/englishcenters/cn?lng=en"
 TIMEOUT_FOR_ELEMENT_WAITING = 60
