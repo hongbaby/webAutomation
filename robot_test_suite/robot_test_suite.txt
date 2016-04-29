@@ -1,10 +1,10 @@
 *** Settings ***
 Test Template
-Library           ../cases/my_course_page_check.py
+Library           cases/my_course_page_check.py
 Library           MyCoursePageCheck.test_current_course_name_check
 
 *** Test Cases ***
 VerifyCoursePage
-    [Setup]    ../globalUse/PageBase.setUp
+    [Setup]       globalUse/PageBase.setUp
     test_current_course_name_check
-    [Teardown]    ../globalUse/PageBase.tearDown
+    [Teardown]    globalUse/PageBase.tearDown
