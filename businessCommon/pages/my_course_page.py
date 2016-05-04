@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class MyCoursePage:
+class MyCoursePage(object):
 
     GE_COURSE_NAME = "General English:"
     COURSE_MENU_XPATH = "//span[contains(., 'Course')]"

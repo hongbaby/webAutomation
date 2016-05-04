@@ -1,9 +1,10 @@
-from globalUse.Utility import USERNAME, PASSWORD
+from globalUse.Utility import USERNAME, PASSWORD, LOGIN_URL
 from businessCommon.pages.my_page import MyPage
 
 
 def log_in(driver, username=USERNAME, password=PASSWORD):
 
+    driver.get(LOGIN_URL)
     driver.find_element_by_id("username").send_keys(username)
     driver.find_element_by_id("password").send_keys(password)
     driver.find_element_by_class_name("etc-login-btn").click()
