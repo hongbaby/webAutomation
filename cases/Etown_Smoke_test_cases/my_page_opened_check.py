@@ -13,5 +13,4 @@ class MyPageOpenedCheck(FrontEndTestCase):
         self.browser.quit()
 
 if __name__ == '__main__':
-    mypage = MyPageOpenedCheck()
-    mypage.runTest()
+    MyPageOpenedCheck().runTest()
