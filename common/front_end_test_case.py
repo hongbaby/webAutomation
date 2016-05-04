@@ -1,12 +1,11 @@
 from selenium import webdriver
-from globalUse.Utility import IMPLICITLY_WAIT_TIME, LOGIN_URL
+from globalUse.Utility import IMPLICITLY_WAIT_TIME
 
 
 class FrontEndTestCase(object):
 
-    driver = webdriver.Chrome()
-
     def create_browser_driver(self):
+        self.driver = webdriver.Firefox()
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT_TIME)
 

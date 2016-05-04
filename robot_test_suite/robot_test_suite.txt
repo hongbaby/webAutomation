@@ -1,22 +1,9 @@
 *** Settings ***
 Test Template
-Library           cases/my_course_page_check.py
+Library           cases.my_course_page_current_level_check.py
+Library           my_course_page_current_level_check.MyCoursePageCurrentLevelCheck
+
 
 *** Test Cases ***
-VerifyCoursePage
-    [Setup]       globalUse/PageBase.setUp
-    current_course_name_check
-    [Teardown]    globalUse/PageBase.tearDown
-
-VerifyCourseLevel
-    [Setup]       globalUse/PageBase.setUp
-    current_level
-    [Teardown]    globalUse/PageBase.tearDown
-
-
-*** Keywords ***
-current_course_name_check
-    MyCoursePageCheck.test_current_course_name_check
-
-current_level
-    MyCoursePageCheck.test_current_course_name_check
+VerifyMyCoursePage
+    my_course_page_current_level_check.MyCoursePageCurrentLevelCheck.runTest
