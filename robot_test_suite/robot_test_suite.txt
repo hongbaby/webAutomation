@@ -6,4 +6,9 @@ Library           my_course_page_current_level_check.MyCoursePageCurrentLevelChe
 
 *** Test Cases ***
 VerifyMyCoursePage
-    my_course_page_current_level_check.MyCoursePageCurrentLevelCheck.runTest
+    mycoursepagecheck
+
+
+*** Keywords ***
+mycoursepagecheck
+    cases.Etown_Smoke_test_cases.my_course_page_current_level_check.MyCoursePageCurrentLevelCheck.runTest
