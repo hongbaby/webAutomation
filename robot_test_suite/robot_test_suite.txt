@@ -1,6 +1,6 @@
 *** Settings ***
 Test Template
-Library           cases.my_course_page_current_level_check.py
+Library           cases.Etown_Smoke_test_cases.my_course_page_current_level_check.py
 Library           my_course_page_current_level_check.MyCoursePageCurrentLevelCheck
 
 

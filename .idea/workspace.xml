@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5306288-bb1d-4720-aef2-a364fae070ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globalUse/Utility.py" afterPath="$PROJECT_DIR$/globalUse/Utility.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/front_end_test_case.py" afterPath="$PROJECT_DIR$/common/front_end_test_case.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/businessCommon/pages/my_course_page.py" afterPath="$PROJECT_DIR$/businessCommon/pages/my_course_page.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cases/Etown_Smoke_test_cases/my_page_opened_check.py" afterPath="$PROJECT_DIR$/cases/Etown_Smoke_test_cases/my_page_opened_check.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pagebase.py" afterPath="$PROJECT_DIR$/common/pagebase.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot_test_suite/robot_test_suite.txt" afterPath="$PROJECT_DIR$/robot_test_suite/robot_test_suite.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webAutomation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="my_course_page_current_level_check.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my_course_page_current_level_check.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cases/Etown_Smoke_test_cases/my_course_page_current_level_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4848485" vertical-offset="0" max-vertical-offset="561">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            <state vertical-scroll-proportion="-4.6896553" vertical-offset="0" max-vertical-offset="374">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -44,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robot_test_suite.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="robot_test_suite.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/robot_test_suite/robot_test_suite.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state vertical-scroll-proportion="0.25932205" vertical-offset="0" max-vertical-offset="590">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
@@ -58,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/common/front_end_test_case.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="27" />
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -808,28 +802,28 @@
     <entry file="file://$PROJECT_DIR$/common/front_end_test_case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="27" />
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/robot_test_suite/robot_test_suite.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cases/Etown_Smoke_test_cases/my_course_page_current_level_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4848485" vertical-offset="0" max-vertical-offset="561">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state vertical-scroll-proportion="-4.6896553" vertical-offset="0" max-vertical-offset="374">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot_test_suite/robot_test_suite.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25932205" vertical-offset="0" max-vertical-offset="590">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
