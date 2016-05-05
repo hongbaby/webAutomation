@@ -4,6 +4,9 @@ from common.pagebase import PageBase
 
 class MyPage(PageBase):
 
+    ALL_EF_PROGRAM = "All EF Programs"
+    LANGUAGE_BUTTON = "English"
+
     def __init__(self, browser):
         PageBase.__init__(self, browser)
         self.url = "http://" + HOSTNAME + "/school/mypage/ec"
@@ -13,7 +16,5 @@ class MyPage(PageBase):
 
         language_element = self.get_browser.find_element_by_xpath("//a[@class='ue-language-button']/span")
 
-        print logo_element.text
-        assert logo_element.text == "All EF Programs"
-        print language_element.text
-        assert language_element.text == "English"
+        assert logo_element.text == self.ALL_EF_PROGRAM
+        assert language_element.text == self.LANGUAGE_BUTTON
