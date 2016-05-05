@@ -48,38 +48,45 @@ class LevelInfoMini:
     LEVEL_15 = "15"
     LEVEL_16 = "16"
 
-
 account_info = [
     {
-        "partner": Partners.COOL,
-        "Product Type": ProductType.School,
-        "MainRedemptionCode": "S15SCHOOLMAIN",
-        "FreeRedemptionCode": "S15SCHOOLF1D",
-        "DivisionCode": "SSCNSH2",
-        "Product ID": "63",
+        "tags" : {
+            "partner": Partners.COOL,
+            "Product Type": ProductType.School,
+        },
+        "mainRedemptionCode": "S15SCHOOLMAIN",
+        "freeRedemptionCode": "S15SCHOOLF1D",
+        "divisionCode": "SSCNSH2",
+        "productId": "63",
     },
     {
-        "partner": Partners.COOL,
-        "Product Type": ProductType.Home,
-        "MainRedemptionCode": "S15HOMEPL20MAIN",
-        "FreeRedemptionCode": "S15HOMEPL20F1D",
-        "DivisionCode": "SSCNSH2",
-        "Product ID": "64",
+        "tags" : {
+            "partner": Partners.COOL,
+            "Product Type": ProductType.Home,
+        },
+        "mainRedemptionCode": "S15HOMEPL20MAIN",
+        "freeRedemptionCode": "S15HOMEPL20F1D",
+        "divisionCode": "SSCNSH2",
+        "productId": "64",
     },
     {
-        "partner": Partners.MINI,
-        "Product Type": ProductType.School,
-        "MainRedemptionCode": "S15SCHOOLMAIN",
-        "FreeRedemptionCode": "S15SCHOOLF1D",
-        "DivisionCode": "CNMNXA2",
-        "Product ID": "65",
+        "tags" : {
+            "partner": Partners.MINI,
+            "Product Type": ProductType.School,
+        },
+        "mainRedemptionCode": "S15SCHOOLMAIN",
+        "freeRedemptionCode": "S15SCHOOLF1D",
+        "divisionCode": "CNMNXA2",
+        "productId": "65",
     },
     {
-        "partner": Partners.MINI,
-        "Product Type": ProductType.Home,
-        "MainRedemptionCode": "S15HOMEPL20MAIN",
-        "FreeRedemptionCode": "S15HOMEPL20F1D",
-        "DivisionCode": "CNMNXA2",
-        "Product ID": "66",
+        "tags" : {
+            "partner": Partners.MINI,
+            "Product Type": ProductType.Home,
+        },
+        "mainRedemptionCode": "S15HOMEPL20MAIN",
+        "freeRedemptionCode": "S15HOMEPL20F1D",
+        "divisionCode": "CNMNXA2",
+        "productId": "66",
     }
 ]
