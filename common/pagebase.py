@@ -1,3 +1,6 @@
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from globalUse.Utility import PAGE_LOADING_TIME_OUT
 
@@ -21,3 +24,11 @@ class PageBase(object):
     def page_is_loaded(self):
 
         self.get_browser.set_page_load_timeout(PAGE_LOADING_TIME_OUT)
+
+    def switch_to_other_tab(self, current_handle):
+
+        all_handles = self.get_browser.window_handles
+        for handle in all_handles:
+            if handle != current_handle:
+                self.get_browser.switch_to_window(handle)
+                return current_handle
