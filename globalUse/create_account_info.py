@@ -71,7 +71,7 @@ account_info = [
         "Product Type": ProductType.School,
         "MainRedemptionCode": "S15SCHOOLMAIN",
         "FreeRedemptionCode": "S15SCHOOLF1D",
-        "DivisionCode": "CNMNXA2",
+        "DivisionCode": "CNMNWH2",
         "Product ID": "65",
     },
     {
@@ -79,7 +79,7 @@ account_info = [
         "Product Type": ProductType.Home,
         "MainRedemptionCode": "S15HOMEPL20MAIN",
         "FreeRedemptionCode": "S15HOMEPL20F1D",
-        "DivisionCode": "CNMNXA2",
+        "DivisionCode": "CNMNWH2",
         "Product ID": "66",
     }
 ]
