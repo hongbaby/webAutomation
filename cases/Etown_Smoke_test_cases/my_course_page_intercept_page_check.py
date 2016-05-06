@@ -4,7 +4,7 @@ from businessCommon.pages.my_course_page import MyCoursePage
 from businessCommon.pages.create_account_page import CreateAccountPage
 
 
-class MyCoursePageOpened(FrontEndTestCase):
+class MyCourseInterceptPageCheck(FrontEndTestCase):
 
     def runTest(self):
         self.browser = self.create_browser_driver()
@@ -14,9 +14,6 @@ class MyCoursePageOpened(FrontEndTestCase):
 
         MyCoursePage(self.browser).go_to_my_course_page()
 
-        assert self.browser.current_url == MyCoursePage(self.browser).url
+        MyCoursePage(self.browser).wait_for_intercept_page_show_up()
 
         self.browser.quit()
-
-if __name__ == '__main__':
-    MyCoursePageOpened().runTest()

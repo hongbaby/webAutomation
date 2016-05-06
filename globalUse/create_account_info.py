@@ -76,7 +76,7 @@ account_info = [
         },
         "mainRedemptionCode": "S15SCHOOLMAIN",
         "freeRedemptionCode": "S15SCHOOLF1D",
-        "divisionCode": "CNMNXA2",
+        "divisionCode": "CNMNNJ3",
         "productId": "65",
     },
     {
@@ -86,7 +86,7 @@ account_info = [
         },
         "mainRedemptionCode": "S15HOMEPL20MAIN",
         "freeRedemptionCode": "S15HOMEPL20F1D",
-        "divisionCode": "CNMNXA2",
+        "divisionCode": "CNMNNJ3",
         "productId": "66",
     }
 ]
