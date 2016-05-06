@@ -1,6 +1,6 @@
 from common.pagebase import PageBase
 from globalUse.Utility import HOSTNAME
-from globalUse.create_account_info import account_info, Partners, ProductType, LevelInfoCool, MAIN_REDEMPTION_CODE_TEXT
+from globalUse.create_account_info import account_info, Partners, ProductType, LevelInfoCool
 from selenium import webdriver
 
 
@@ -47,7 +47,7 @@ class CreateAccountPage(PageBase):
             if tags["partner"] == partner and tags["Product Type"] == product:
                 break
 
-        for key, value in info:
+        for key, value in info.items():
             if key != "tags":
                 element = self.get_browser.find_element_by_xpath(self.ACCOUNT_INFO_XPATH_FORMAT % key)
                 element.clear()
