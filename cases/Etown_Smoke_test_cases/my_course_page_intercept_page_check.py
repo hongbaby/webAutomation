@@ -17,3 +17,6 @@ class MyCourseInterceptPageCheck(FrontEndTestCase):
         MyCoursePage(self.browser).wait_for_intercept_page_show_up()
 
         self.browser.quit()
+
+if __name__ == '__main__':
+    MyCourseInterceptPageCheck().runTest()
