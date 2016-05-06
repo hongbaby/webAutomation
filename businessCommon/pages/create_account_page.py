@@ -63,7 +63,7 @@ class CreateAccountPage(PageBase):
             print "create account failed. %s" % result_string.split(",")[3].strip()
             return result
 
-    def activate_account(self, startLevel=LevelInfoCool.LEVEL_1, partner=Partners.MINI, product=ProductType.Home):
+    def activate_account(self, startLevel=LevelInfoCool.LEVEL_1, partner=Partners.COOL, product=ProductType.School):
         self.get_url()
         username = self.get_username()
         self.get_browser.find_element_by_xpath(self.ACTIVATE_XPATH).click()

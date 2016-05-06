@@ -2,7 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-from globalUse.Utility import PAGE_LOADING_TIME_OUT
+from globalUse.Utility import PAGE_LOADING_TIME_OUT, TIMEOUT_FOR_ELEMENT_WAITING
 
 
 class PageBase(object):
@@ -32,3 +32,7 @@ class PageBase(object):
             if handle != current_handle:
                 self.get_browser.switch_to_window(handle)
                 return current_handle
+
+    def wait_until_element_visible_enabled(self, xpath):
+        wait = WebDriverWait(self.get_browser, TIMEOUT_FOR_ELEMENT_WAITING)
+        wait.until(expected_conditions.visibility_of_element_located((By.XPATH, xpath)))
