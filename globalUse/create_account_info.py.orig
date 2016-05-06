@@ -70,6 +70,22 @@ account_info = [
         "productId": "64",
     },
     {
+<<<<<<< HEAD
+        "partner": Partners.MINI,
+        "Product Type": ProductType.School,
+        "MainRedemptionCode": "S15SCHOOLMAIN",
+        "FreeRedemptionCode": "S15SCHOOLF1D",
+        "DivisionCode": "CNMNWH2",
+        "Product ID": "65",
+    },
+    {
+        "partner": Partners.MINI,
+        "Product Type": ProductType.Home,
+        "MainRedemptionCode": "S15HOMEPL20MAIN",
+        "FreeRedemptionCode": "S15HOMEPL20F1D",
+        "DivisionCode": "CNMNWH2",
+        "Product ID": "66",
+=======
         "tags" : {
             "partner": Partners.MINI,
             "Product Type": ProductType.School,
@@ -88,5 +104,6 @@ account_info = [
         "freeRedemptionCode": "S15HOMEPL20F1D",
         "divisionCode": "CNMNXA2",
         "productId": "66",
+>>>>>>> 208d4d075a5f65a6299a1327cf25ea57ddec36d3
     }
 ]

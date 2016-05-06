@@ -1,6 +1,6 @@
 from common.pagebase import PageBase
 from globalUse.Utility import HOSTNAME
-from globalUse.create_account_info import account_info, Partners, ProductType, LevelInfoCool
+from globalUse.create_account_info import account_info, Partners, ProductType, LevelInfoCool, MAIN_REDEMPTION_CODE_TEXT
 from selenium import webdriver
 
 
@@ -11,10 +11,8 @@ class CreateAccountPage(PageBase):
     SUBMIT_BUTTON_XPATH = "//input[@type='submit']"
     BODY_XPATH_IN_SUBMIT_ACCOUNT = "/html/body"
     LEVEL_RADIO_XPATH = "/html/body/form/ul/li[2]/input"
-    MAIN_REDEMPTION_CODE = "//input[@name='mainRedemptionCode']"
-    FREE_REDEMPTION_CODE = "//input[@name='freeRedemptionCode']"
-    DIVISION_CODE_XPATH = "//input[@name='divisionCode']"
-    PRODUCT_ID_XPATH = "//input[@name='productId']"
+
+    ACCOUNT_INFO_XPATH_FORMAT = "//input[@name='%s']"
 
     def __init__(self, browser):
         PageBase.__init__(self, browser)
@@ -45,24 +43,15 @@ class CreateAccountPage(PageBase):
 
     def fill_basic_product_info(self, partner, product):
         for info in account_info:
-            if info["partner"] == partner and info["Product Type"] == product:
+            tags = info["tags"]
+            if tags["partner"] == partner and tags["Product Type"] == product:
                 break
 
-        main_redemption_code_element = self.get_browser.find_element_by_xpath(self.MAIN_REDEMPTION_CODE)
-        main_redemption_code_element.clear()
-        main_redemption_code_element.send_keys(info["MainRedemptionCode"])
-
-        free_redemption_code_element = self.get_browser.find_element_by_xpath(self.FREE_REDEMPTION_CODE)
-        free_redemption_code_element.clear()
-        free_redemption_code_element.send_keys(info["FreeRedemptionCode"])
-
-        division_code_element = self.get_browser.find_element_by_xpath(self.DIVISION_CODE_XPATH)
-        division_code_element.clear()
-        division_code_element.send_keys(info["DivisionCode"])
-
-        product_id_element = self.get_browser.find_element_by_xpath(self.PRODUCT_ID_XPATH)
-        product_id_element.clear()
-        product_id_element.send_keys(info["Product ID"])
+        for key, value in info:
+            if key != "tags":
+                element = self.get_browser.find_element_by_xpath(self.ACCOUNT_INFO_XPATH_FORMAT % key)
+                element.clear()
+                element.send_keys(value)
 
     @staticmethod
     def submit_result_check(result_string):
