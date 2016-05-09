@@ -1,5 +1,5 @@
 from common.pagebase import PageBase
-from globalUse.Utility import HOSTNAME
+from globalUse.Utility import HOSTNAME2
 from globalUse.create_account_info import account_info, Partners, ProductType, LevelInfoCool
 from selenium import webdriver
 
@@ -16,7 +16,7 @@ class CreateAccountPage(PageBase):
 
     def __init__(self, browser):
         PageBase.__init__(self, browser)
-        self.url = "http://" + HOSTNAME + "/services/oboe2/salesforce/test/CreateMemberForE14HZ?v=2"
+        self.url = "http://" + HOSTNAME + "/services/oboe2/salesforce/test/CreateMemberForE14HZ"
 
     def get_username(self):
         all_info = self.get_browser.find_element_by_xpath(self.BODY_XPATH_IN_CREATE_ACCOUNT).text

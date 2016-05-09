@@ -56,7 +56,7 @@ account_info = [
         },
         "mainRedemptionCode": "S15SCHOOLMAIN",
         "freeRedemptionCode": "S15SCHOOLF1D",
-        "divisionCode": "SSCNSH2",
+        "divisionCode": "SSCNTE2",
         "productId": "63",
     },
     {

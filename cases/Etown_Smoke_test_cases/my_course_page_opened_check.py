@@ -7,16 +7,12 @@ from businessCommon.pages.create_account_page import CreateAccountPage
 class MyCoursePageOpened(FrontEndTestCase):
 
     def runTest(self):
-        self.browser = self.create_browser_driver()
+        username = CreateAccountPage(self.driver).activate_account()
+        EtownLoginPage(self.driver).log_in(username)
 
-        username = CreateAccountPage(self.browser).activate_account()
-        EtownLoginPage(self.browser).log_in(username)
+        MyCoursePage(self.driver).go_to_my_course_page()
 
-        MyCoursePage(self.browser).go_to_my_course_page()
-
-        assert self.browser.current_url == MyCoursePage(self.browser).url
-
-        self.browser.quit()
+        assert self.browser.current_url == MyCoursePage(self.driver).url
 
 if __name__ == '__main__':
     MyCoursePageOpened().runTest()

@@ -1,4 +1,4 @@
-from globalUse.Utility import HOSTNAME
+from globalUse.Utility import HOSTNAME2
 from common.pagebase import PageBase
 
 
