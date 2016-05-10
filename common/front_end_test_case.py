@@ -4,9 +4,10 @@ from globalUse.Utility import IMPLICITLY_WAIT_TIME
 class FrontEndTestCase(object):
 
     def create_browser_driver(self):
-        # chromedriver = "/usr/local/bin/chromedriver"
-        # os.environ["webdriver.chrome.driver"] = chromedriver
-        self.driver = webdriver.Chrome("/usr/bin/chromedriver")
+        # # chromedriver = "/usr/local/bin/chromedriver"
+        # # os.environ["webdriver.chrome.driver"] = chromedriver
+        # self.driver = webdriver.Chrome("/usr/bin/chromedriver")
+        self.driver= webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT_TIME)
 
