@@ -1,5 +1,7 @@
 import Queue
 import cases
+import os
+from common.logging_file import Logging
 
 
 class RunTestCasesInQueue(object):
@@ -15,6 +17,9 @@ class RunTestCasesInQueue(object):
             execute_test_case = test_case()
 
             execute_test_case.create_browser_driver()
+
+            logger, log_file_full_name = Logging().create_logger(test_case.__name__, "./", "testdemo.log")
+            execute_test_case.logger = logger
             execute_test_case.runTest()
             execute_test_case.quit_browser_driver()
 
