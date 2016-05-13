@@ -1,5 +1,7 @@
 from selenium import webdriver
 from globalUse.Utility import IMPLICITLY_WAIT_TIME
+from main import kill_process
+
 
 class FrontEndTestCase(object):
 
@@ -7,6 +9,7 @@ class FrontEndTestCase(object):
         # # chromedriver = "/usr/local/bin/chromedriver"
         # # os.environ["webdriver.chrome.driver"] = chromedriver
         # self.driver = webdriver.Chrome("/usr/bin/chromedriver")
+        kill_process("taskkill /F /IM chromedriver.exe")
         self.driver= webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT_TIME)
