@@ -1,5 +1,5 @@
 from common.pagebase import PageBase
-from globalUse.Utility import HOSTNAME2
+from globalUse.Utility import HOSTNAME
 from globalUse.create_account_info import account_info, Partners, ProductType, LevelInfoCool
 from selenium import webdriver
 

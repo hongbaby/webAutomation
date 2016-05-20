@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from common.pagebase import PageBase
-from globalUse.Utility import HOSTNAME2, ClassCategory
+from globalUse.Utility import HOSTNAME, ClassCategory
 from selenium.webdriver.support.wait import WebDriverWait
 
 class MyCoursePage(PageBase):
@@ -24,7 +24,7 @@ class MyCoursePage(PageBase):
 
     def __init__(self, browser):
         PageBase.__init__(self, browser)
-        self.url = "http://" + HOSTNAME2 + "/school/e12?icid=School.MyCourse.2012"
+        self.url = "http://" + HOSTNAME + "/school/e12?icid=School.MyCourse.2012"
 
     @property
     def get_course_web_element(self):

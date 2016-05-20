@@ -1,5 +1,6 @@
 import Queue
 import cases
+import os
 
 
 class RunTestCasesInQueue(object):
@@ -21,3 +22,7 @@ class RunTestCasesInQueue(object):
 
 if __name__ == "__main__":
     RunTestCasesInQueue().run_test_cases()
+
+
+def kill_process(cmd_name):
+    os.system(cmd_name)
